@@ -1,0 +1,63 @@
+﻿  OpenCVApplication.cpp
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(417,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(417,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(418,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(418,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(419,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(419,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(451,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(451,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(452,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(452,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(453,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(453,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(469,27): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(469,58): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(496,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(496,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(497,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(497,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(498,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(498,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(511,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(512,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(515,42): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(515,93): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(519,39): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(519,88): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(545,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(545,9): message : consider using '%zd' in the format string
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(547,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(547,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(551,10): warning C4305: '=': truncation from 'double' to 'float'
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(553,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(558,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\SRF\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(577,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  OpenCVApplication.vcxproj -> D:\SRF\OpenCVApplication-VS2015_31_basic\x64\Debug\OpenCVApplication.exe
+  OpenCV\dll\Debug\opencv_ffmpeg310_64.dll
+  OpenCV\dll\Debug\opencv_world310d.dll
+          2 file(s) copied.
