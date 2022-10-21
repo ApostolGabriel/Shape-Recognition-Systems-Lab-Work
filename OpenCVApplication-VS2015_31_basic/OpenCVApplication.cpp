@@ -9,6 +9,13 @@
 #include <random>
 
 
+struct peak {
+	int teta, ro, hval;
+	bool operator < (const peak& o) const {
+		return hval > o.hval;
+	}
+};
+
 void testOpenImage()
 {
 	char fname[MAX_PATH];
@@ -611,6 +618,94 @@ void lab2_ransac(char* path)
 	waitKey();
 }
 
+void lab3_hough(char* path)
+{
+	Mat img = imread(path, CV_LOAD_IMAGE_GRAYSCALE);
+	int m = img.rows;
+	int n = img.cols;
+	int D = sqrt(m * m + n * n);
+	
+
+	Mat Hough(D + 1, 360, CV_32SC1);
+	Hough.setTo(0);
+
+	float roMax = 0;
+
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (img.at<uchar>(i, j) == 255) {
+				for (int teta = 0; teta < 360; teta++) {
+					float tetaRad = teta * PI / 180;
+					float ro = j * cos(tetaRad) + i * sin(tetaRad);
+					if (ro > 0) {
+						Hough.at<int>(ro, teta)++;
+					}
+					if (ro > roMax) {
+						roMax = ro;
+					}
+				}
+			}
+		}
+	}
+
+	int maxHough = 0;
+	for (int i = 0; i < D + 1; i++) {
+		for (int j = 0; j < 360; j++) {
+			if (Hough.at<int>(i, j) > maxHough) {
+				maxHough = Hough.at<int>(i, j);
+			}
+		}
+	}
+
+	Mat HoughImg;
+	Hough.convertTo(HoughImg, CV_8UC1, 255.f / maxHough);
+
+	imshow("Acumulator", HoughImg);
+	waitKey();
+
+	std::vector<peak> v;
+	for (int ro = 0; ro < D + 1; ro++) {
+		for (int teta = 0; teta < 360; teta++) {
+			int ok = 1;
+			for (int dro = -3; dro < 4; dro++) {
+				for (int dteta = -3; dteta < 4; dteta++) {
+					if (ro+dro >= 0 && ro + dro < D + 1 && teta + dteta >= 0 && teta + dteta < 360) {
+						if (Hough.at<int>(ro + dro, teta + dteta) > Hough.at<int>(ro, teta)) {
+							ok = 0;
+						}
+					}
+				}
+			}
+			if (ok == 1) {
+				v.push_back({ teta, ro, Hough.at<int>(ro, teta) });
+			}
+		}
+	}
+	printf("\n%d\n", v.size());
+	//std::vector<peak> sortedv;
+	sort(v.begin(), v.end());
+	int k = 9;
+	for (int i = 0; i < k; i++)
+	{
+		int teta = v[i].teta;
+		int ro = v[i].ro;
+		printf("ro: %d teta: %d\n", ro, teta);
+		float tetaRad = teta * PI / 180;
+		if (abs(sin(tetaRad)) > 0.1) {
+			
+			line(img, Point(1, (ro - cos(tetaRad)) / sin(tetaRad)), Point(n-1, (ro - (n-1) * cos(tetaRad)) / sin(tetaRad)), Scalar(255, 255, 255));
+		}
+		else
+		{
+			line(img, Point((ro - sin(tetaRad)) / cos(tetaRad), 1), Point((ro - (m-1) * sin(tetaRad)) / cos(tetaRad), m-1), Scalar(255, 255, 255));
+
+		}
+	}
+
+	imshow("linii1", img);
+	waitKey();
+}
+
 int main()
 {
 	int op;
@@ -632,6 +727,7 @@ int main()
 		printf(" 11 - Lab1 - Draw line model 1\n");
 		printf(" 12 - Lab1 - Draw line model 2\n");
 		printf(" 13 - Lab2 - RANSAC algorithm\n");
+		printf(" 14 - Lab3 - Detectia dreptelor cu transformata Hough\n");
 		printf(" 0 - Exit\n\n");
 		printf("Option: ");
 		scanf("%d",&op);
@@ -699,6 +795,11 @@ int main()
 				strcat(fullpath, filename);
 				lab2_ransac(fullpath);
 				break;
+			}
+			case 14:
+			{
+				char filename[] = "Imglab3/edge_complex.bmp";
+				lab3_hough(filename);
 			}
 		}
 	}
