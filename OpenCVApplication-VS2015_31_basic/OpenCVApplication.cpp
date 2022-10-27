@@ -706,6 +706,145 @@ void lab3_hough(char* path)
 	waitKey();
 }
 
+Mat calc_DT(Mat img, int m, int n) {
+	Mat dt = img.clone();
+
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (img.at<uchar>(i, j) > 0) {
+				dt.at<uchar>(i, j) = 255;
+			}
+		}
+	}
+
+	int di[] = { -1, -1, -1, 0, 0, 0, 1, 1, 1 };
+	int dj[] = { -1, 0, 1, -1, 0, 1, -1, 0, 1 };
+	int weight[] = { 3, 2, 3, 2, 0, 2, 3, 2, 3 };
+
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			int min = INT_MAX;
+			for (int k = 0; k < 9; k++) {
+				if (i + di[k] >= 0 && i + di[k] < m && j + dj[k] >= 0 && j + dj[k] < n) {
+					int res = dt.at<uchar>(i + di[k], j + dj[k]) + weight[k];
+					if (min > res) {
+						min = res;
+					}
+				}
+			}
+			dt.at<uchar>(i, j) = min;
+		}
+	}
+
+	for (int i = m - 1; i >= 0; i--) {
+		for (int j = n - 1; j >= 0; j--) {
+			int min = INT_MAX;
+			for (int k = 0; k < 9; k++) {
+				if (i + di[k] >= 0 && i + di[k] < m && j + dj[k] >= 0 && j + dj[k] < n) {
+					int res = dt.at<uchar>(i + di[k], j + dj[k]) + weight[k];
+					if (min > res) {
+						min = res;
+					}
+				}
+			}
+			dt.at<uchar>(i, j) = min;
+		}
+	}
+
+	return dt;
+}
+
+void lab4_DT(char* path) {
+	Mat img = imread(path, IMREAD_GRAYSCALE);
+	int m = img.rows;
+	int n = img.cols;
+
+	Mat dt = calc_DT(img, m, n);
+	
+	imshow("Transformata distanta", dt);
+	waitKey();
+}
+
+float calc_scor(Mat dtTemp, Mat imgUnk, int m, int n, Point cTemp, Point cUnk, int centered) {
+	std::vector<Point> contour;
+
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (imgUnk.at<uchar>(i, j) == 0) {
+				contour.push_back({ i, j });
+			}
+		}
+	}
+
+	int sum = 0;
+	for (int i = 0; i < contour.size(); i++) {
+		if (centered == 1) {
+			int p = contour[i].x + cTemp.x - cUnk.x;
+			int q = contour[i].y + cTemp.y - cUnk.y;
+			if (p < dtTemp.rows && p >= 0 && q < dtTemp.cols && q >= 0) {
+				sum += dtTemp.at<uchar>(contour[i].x + cTemp.x - cUnk.x, contour[i].y + cTemp.y - cUnk.y);
+			}
+		}
+		else {
+			sum += dtTemp.at<uchar>(contour[i].x, contour[i].y);
+
+		}
+	}
+
+	return sum * 1.0 / contour.size();
+}
+
+Point calc_centru_de_masa(Mat img, int m, int n) {
+	int sumx = 0;
+	int sumy = 0;
+	int sumcont = 0;
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (img.at<uchar>(i, j) == 0) {
+				sumx += i;
+				sumy += j;
+				sumcont++;
+			}
+		}
+	}
+	return { sumx / sumcont, sumy / sumcont };
+}
+
+void lab4_pattern_matching(char* fTemp, char* fUnk) {
+	Mat imgTemp = imread(fTemp, IMREAD_GRAYSCALE);
+	Mat imgUnk = imread(fUnk, IMREAD_GRAYSCALE); 
+	
+	int m1 = imgTemp.rows;
+	int n1 = imgTemp.cols;
+
+	int m2 = imgUnk.rows;
+	int n2 = imgUnk.cols;
+
+	Mat dtTemp = calc_DT(imgTemp, m1, n1);
+
+	printf("Score 1 for unknown without center: %f\n", calc_scor(dtTemp, imgUnk, m2, n2, { 0,0 }, { 0,0 }, 0));
+	
+	Mat dtUnk = calc_DT(imgUnk, m2, n2);
+	printf("Score 2 for unknown without center: %f\n", calc_scor(dtUnk, imgTemp, m1, n1, { 0,0 }, { 0,0 }, 0));
+	
+
+
+	int cxTemp, cyTemp, cxUnk, cyUnk;
+	
+	Point cTemp = calc_centru_de_masa(imgTemp, m1, n1);
+	Point cUnk = calc_centru_de_masa(imgUnk, m2, n2);
+
+	printf("Score for unknown centered %f\n", calc_scor(dtTemp, imgUnk, m2, n2, cTemp, cUnk, 1));
+	int d;
+	std::cin >> d;
+}
+
+/*
+	adaugam intr-un vector punctele de contur din imaginea necunoscuta
+	aplicam dt pe template
+	facem media valorilor din punctele care corespund in dt din template cu valorile din vector
+*/
+
 int main()
 {
 	int op;
@@ -728,6 +867,8 @@ int main()
 		printf(" 12 - Lab1 - Draw line model 2\n");
 		printf(" 13 - Lab2 - RANSAC algorithm\n");
 		printf(" 14 - Lab3 - Detectia dreptelor cu transformata Hough\n");
+		printf(" 15 - Lab4 - DT\n");
+		printf(" 16 - Lab4 - Model Recognition using DT\n");
 		printf(" 0 - Exit\n\n");
 		printf("Option: ");
 		scanf("%d",&op);
@@ -800,6 +941,17 @@ int main()
 			{
 				char filename[] = "Imglab3/edge_complex.bmp";
 				lab3_hough(filename);
+			}
+			case 15:
+			{
+				char filename[] = "images_DT_PM/DT/contour3.bmp";
+				lab4_DT(filename);
+			}
+			case 16:
+			{
+				char filenameTemplate[] = "images_DT_PM/PatternMatching/template.bmp";
+				char filenameUnknown[] = "images_DT_PM/PatternMatching/unknown_object1.bmp";
+				lab4_pattern_matching(filenameTemplate, filenameUnknown);
 			}
 		}
 	}

@@ -83,6 +83,11 @@ C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVAppl
           [
               _Tp=int
           ]
+C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(794,19): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,22): warning C4101: 'cxUnk': unreferenced local variable
+C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,14): warning C4101: 'cyTemp': unreferenced local variable
+C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,6): warning C4101: 'cxTemp': unreferenced local variable
+C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,29): warning C4101: 'cyUnk': unreferenced local variable
   OpenCVApplication.vcxproj -> C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\x64\Debug\OpenCVApplication.exe
   OpenCV\dll\Debug\opencv_ffmpeg310_64.dll
   OpenCV\dll\Debug\opencv_world310d.dll
