@@ -1,94 +1,100 @@
 ﻿  OpenCVApplication.cpp
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(424,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(424,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(425,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(425,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(426,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(426,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(458,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(458,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(459,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(459,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(460,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(460,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(476,27): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(424,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(424,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(425,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(425,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(426,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(426,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(458,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(458,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(459,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(459,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(460,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(460,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(476,27): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(476,58): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(476,58): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(503,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(503,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(504,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(504,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(505,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(505,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(518,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(519,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(522,42): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(503,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(503,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(504,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(504,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(505,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(505,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(518,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(519,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(522,42): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(522,93): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(522,93): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(526,39): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(526,39): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(526,88): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(526,88): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(552,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(552,9): message : consider using '%zd' in the format string
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(554,26): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(554,35): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(558,10): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(560,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(565,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(584,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(626,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(638,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(641,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(684,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(684,9): message : consider using '%zd' in the format string
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(693,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(696,43): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(552,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(552,9): message : consider using '%zd' in the format string
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(554,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(554,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(558,10): warning C4305: '=': truncation from 'double' to 'float'
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(560,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(565,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(584,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(626,8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(638,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(641,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(684,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(684,9): message : consider using '%zd' in the format string
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(693,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(696,43): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(696,99): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(696,99): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(700,40): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(700,40): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(700,94): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(700,94): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
           with
           [
               _Tp=int
           ]
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(794,19): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,22): warning C4101: 'cxUnk': unreferenced local variable
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,14): warning C4101: 'cyTemp': unreferenced local variable
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,6): warning C4101: 'cxTemp': unreferenced local variable
-C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,29): warning C4101: 'cyUnk': unreferenced local variable
-  OpenCVApplication.vcxproj -> C:\Users\gabriel.apostol\Documents\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\x64\Debug\OpenCVApplication.exe
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(794,19): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,22): warning C4101: 'cxUnk': unreferenced local variable
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,14): warning C4101: 'cyTemp': unreferenced local variable
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,6): warning C4101: 'cxTemp': unreferenced local variable
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(832,29): warning C4101: 'cyUnk': unreferenced local variable
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(879,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\OpenCVApplication.cpp(904,37): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=float
+          ]
+  OpenCVApplication.vcxproj -> D:\SRF\Shape-Recognition-Systems-Lab-Work\OpenCVApplication-VS2015_31_basic\x64\Debug\OpenCVApplication.exe
   OpenCV\dll\Debug\opencv_ffmpeg310_64.dll
   OpenCV\dll\Debug\opencv_world310d.dll
           2 file(s) copied.

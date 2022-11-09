@@ -845,6 +845,74 @@ void lab4_pattern_matching(char* fTemp, char* fUnk) {
 	facem media valorilor din punctele care corespund in dt din template cu valorile din vector
 */
 
+void lab5_statistics() {
+	char folder[256] = "faces";
+	char fname[256];
+	int p = 400;
+	int N = 19 * 19;
+	Mat I = Mat(p, N, CV_8UC1);
+	int k = 0;
+	for (int i = 1; i <= 400; i++) {
+		sprintf(fname, "%s/face%05d.bmp", folder, i);
+		Mat img = imread(fname, 0);
+		
+		for (int j = 0; j < N; j++) {
+			I.at<uchar>(k, j) = img.at<uchar>(j / 19, j % 19);
+		}
+		k++;
+	}
+
+	/*for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < N; j++) {
+			printf("%d ", I.at<uchar>(i, j));
+		}
+		printf("\n");
+	}*/
+
+	float med[361];
+
+	for (int i = 0; i < N; i++) {
+		int sum = 0;
+		for (int j = 0; j < p; j++) {
+			sum += I.at<uchar>(j, i);
+		}
+		med[i] = sum * 1.0 / p;
+	}
+
+	FILE* f = fopen("csv/med.csv", "w");
+
+	for (int i = 0; i < N; i++) {
+		if (i == N - 1) {
+			fprintf(f, "%f", med[i]);
+		}
+		else {
+			fprintf(f, "%f,", med[i]);
+		}
+	}
+
+	fclose(f);
+
+	
+	Mat cov = Mat(p, N, CV_32FC1);
+	for (int i = 0; i < p; i++) {
+		for (int j = 0; j < N; j++) {
+			float prod = 0;
+			for (int k = 1; k < p; k++) {
+				prod += (I.at<uchar>(k, i) - med[i]) * (I.at<uchar>(k, j) - med[j]);
+			}
+			
+			cov.at<float>(i, j) = prod * 1.0 / p;
+		}
+
+	}
+
+	printf("%f\n", cov.at<float>(0, 0));
+
+	//for(int i = 0; i <)
+	int d;
+	scanf("%d", &d);
+}
+
 int main()
 {
 	int op;
@@ -869,6 +937,7 @@ int main()
 		printf(" 14 - Lab3 - Detectia dreptelor cu transformata Hough\n");
 		printf(" 15 - Lab4 - DT\n");
 		printf(" 16 - Lab4 - Model Recognition using DT\n");
+		printf(" 17 - lab5 - Statistics\n");
 		printf(" 0 - Exit\n\n");
 		printf("Option: ");
 		scanf("%d",&op);
@@ -952,6 +1021,10 @@ int main()
 				char filenameTemplate[] = "images_DT_PM/PatternMatching/template.bmp";
 				char filenameUnknown[] = "images_DT_PM/PatternMatching/unknown_object1.bmp";
 				lab4_pattern_matching(filenameTemplate, filenameUnknown);
+			}
+			case 17:
+			{
+				lab5_statistics();
 			}
 		}
 	}
